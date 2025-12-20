@@ -1,0 +1,36 @@
+# .dockerignore works like .gitignore
+#
+# It tells Docker which files NOT to send to the build context
+# Influencing what gets copied when we run "COPY . ."
+#
+# Typically used to: 
+#   - Make images smaller
+#   - Make builds faster 
+#   - To prevent sensitive info from accidently ending up in images
+
+
+# Ignore top secret file
+secret.txt
+
+
+
+
+
+# -- More typical stuff -----------
+
+# IDE files
+.vscode/
+
+# Python virtual environments 
+/.venv
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Version control 
+.gitignore
+.git
+
+# Environment variable
+.env
