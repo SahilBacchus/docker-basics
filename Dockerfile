@@ -19,6 +19,12 @@ FROM python:3.11-slim
 WORKDIR /app
 
 
+# Set environment variables inside the container
+# ENV <key>=<value>
+#
+ENV RUNNING_IN_DOCKER=true
+
+
 # Copy files from your computer into container 
 # "." means current directory
 # COPY <src> <dest> 
